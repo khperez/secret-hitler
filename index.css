@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+body {
+  background: #2E2E3A;
+  color: #FFF;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+b {
+  font-size: 28px;
+  color: #FFF;
+}
+
+.container {
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0 12px 12px 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-top: 12px solid white;
+}
+
+.container .picture {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 445px;
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/24/8d/f5/248df520ef2048d0614c73f90b9de4ab.jpg");
+  background-color: #CBB618;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: pictureDown 0.7s;
+          animation: pictureDown 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container .picture_up {
+  -webkit-animation: pictureUp 0.7s;
+          animation: pictureUp 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container .options {
+  position: relative;
+  bottom: 110px;
+  width: 300px;
+  height: 37px;
+  display: none;
+  opacity: 0;
+  padding: 15px 0 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 24px;
+  color: #FFF;
+  text-align: center;
+}
+
+.container .options i {
+  padding-left: 52px;
+}
+
+.container .options_show {
+  -webkit-animation: optionsDisplay 0.7s;
+          animation: optionsDisplay 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.container .navigation {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  bottom: 0;
+  color: #4E347F;
+  text-align: left;
+  font-size: 24px;
+}
+
+.container .navigation .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.container .navigation .plus .plusHor {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 24px;
+  height: 2px;
+  background: #4E347F;
+}
+
+.container .navigation .plus .plusVer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 2px;
+  height: 24px;
+  background: #4E347F;
+  -webkit-animation: deactivation 0.7s;
+          animation: deactivation 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container .navigation .plus .plusVer_active {
+  -webkit-animation: activation 0.7s;
+          animation: activation 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 300px;
+  height: 55px;
+  top: -38px;
+}
+
+.nav_btns {
+  padding-top: 17px;
+  padding-left: 17px;
+  -webkit-animation: navShow 0.7s;
+          animation: navShow 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.nav_btns .nav_btn {
+  margin-left: 32px;
+}
+
+.nav_btns .nav_btn_r {
+  margin-left: 83px;
+}
+
+.nav_btns_hide {
+  -webkit-animation: navHide 0.7s;
+          animation: navHide 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.top_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FF5C39;
+  width: 100%;
+  z-index: 1;
+}
+
+.top_nav span {
+  padding: 10px;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top_nav span#logo {
+  color: #FAE5D3;
+  font-family: 'Patua One', cursive;
+  font-size: 18px;
+  text-shadow: 2px 2px 8px black;
+}
+
+.top_nav span#logo:hover {
+  text-shadow: 4px 4px 10px black;
+}
+
+.top_nav a {
+  text-decoration: none;
+  color: #FAE5D3;
+}
+
+@-webkit-keyframes activation {
+  0% {
+    width: 2px;
+    height: 34px;
+    top: 50%;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+}
+
+@keyframes activation {
+  0% {
+    width: 2px;
+    height: 34px;
+    top: 50%;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+}
+
+@-webkit-keyframes deactivation {
+  0% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 2px;
+    height: 24px;
+    top: 50%;
+  }
+}
+
+@keyframes deactivation {
+  0% {
+    width: 300px;
+    height: 55px;
+    top: -38px;
+  }
+  50% {
+    width: 2px;
+    height: 55px;
+    top: -38px;
+  }
+  100% {
+    width: 2px;
+    height: 24px;
+    top: 50%;
+  }
+}
+
+@-webkit-keyframes pictureUp {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: -65px;
+  }
+}
+
+@keyframes pictureUp {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: -65px;
+  }
+}
+
+@-webkit-keyframes pictureDown {
+  0% {
+    top: -65px;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes pictureDown {
+  0% {
+    top: -65px;
+  }
+  50% {
+    top: -65px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes optionsDisplay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes optionsDisplay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes navShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes navHide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes navHide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
