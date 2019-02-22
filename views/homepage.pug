@@ -3,5 +3,7 @@ extends layout
 block content
     script(src='/javascripts/homepage.js')
     section.homepage
-        h1= title
-        p Welcome to #{title}
+        .flex
+            .col-100
+                .blurb 
+                    h1 Home Page
