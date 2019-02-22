@@ -34,11 +34,11 @@ section.homepage {
             font-size: 40px;
             padding-left: 30px;
             padding-right: 30px; }
-        section.homepage .flex .col-100 .card .roles {
+        section.homepage .flex .col-100 .card .messages {
           display: flex;
           justify-content: center;
           align-items: center; }
-          section.homepage .flex .col-100 .card .roles .icon {
+          section.homepage .flex .col-100 .card .messages .icon {
             padding: 20px;
             line-spacing: 2px;
             font-size: 30px;
@@ -48,13 +48,13 @@ section.homepage {
             color: white;
             position: absolute;
             text-align: center; }
-            section.homepage .flex .col-100 .card .roles .icon .voting {
+            section.homepage .flex .col-100 .card .messages .icon .voting {
               width: 400px; }
-          section.homepage .flex .col-100 .card .roles .hidden {
+          section.homepage .flex .col-100 .card .messages .hidden {
             display: block;
             opacity: 0;
             transform: translateY(100px); }
-          section.homepage .flex .col-100 .card .roles .visible {
+          section.homepage .flex .col-100 .card .messages .visible {
             display: inline-block;
             opacity: 1;
             transform: translateY(-100px); }
