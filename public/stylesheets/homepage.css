@@ -1,8 +1,26 @@
 section.homepage {
   height: 100vh; }
-  section.homepage .flex .col-100 {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+  section.homepage .flex {
+    height: 100vh; }
+    section.homepage .flex .col-100 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section.homepage .flex .col-100 .card {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        overflow: hidden;
+        width: 300px;
+        height: 500px;
+        background: #fff;
+        text-align: center;
+        margin: 10px auto; }
+        section.homepage .flex .col-100 .card .character {
+          position: relative;
+          top: 0;
+          width: 100%;
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
 
 /*# sourceMappingURL=homepage.css.map */
