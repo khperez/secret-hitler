@@ -6,9 +6,12 @@ block content
         .flex
             .col-100
                 .card
-                    .character
+                    .character.noselect
                         img(src='https://joeschmoe.io/api/v1/random')
                     .navbuttons
-                        ion-icon(name='contacts').searchbtn
-                        ion-icon(name='contact').userbtn
+                        ion-icon(name='contacts').partybtn
+                        ion-icon(name='contact').charbtn
                         ion-icon(name='done-all').votebtn
+                    .roles
+                        h1.partyname.hidden.noselect PartyName
+                        h1.charname.hidden.noselect CharName
