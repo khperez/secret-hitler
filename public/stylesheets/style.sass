@@ -6,6 +6,39 @@ body
 a
   color: #00B7FF
 
+.col-30 
+  width: 30%
+
+.col-40
+  width: 40%
+
+.col-50
+  width: 50%
+
+.col-60
+  width: 60%
+
+.col-70
+  width: 70%
+
+
+
+.flex
+  display: flex
+  flex-direction: row
+
+.flex--center
+  justify-content: center
+
+.flex--space-around
+  justify-content: space-around
+
+.flex--start
+  justify-content: flex-start
+
+.order-first
+  order: -1
+
 .menuwrapper
   z-index: 6
   .logo
@@ -64,3 +97,18 @@ a
     cursor: pointer
     color: #fff
     display: block
+
+@media only screen and (max-width: 757px)
+  .col-30 
+    width: auto
+
+  .col-40
+    width: auto
+
+  .col-50
+    width: auto
+  
+  .col-60
+    width: auto
+  .col-70
+    width: auto
