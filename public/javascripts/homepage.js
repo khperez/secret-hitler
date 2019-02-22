@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.partybtn').on('click',function(){
         console.log('search');
-        if ($('.partyname').hasClass('hidden')) {
+        if ($('h1.icon.hidden').length == 2) {
             $('.partyname').removeClass('hidden');
             $('.partyname').addClass('visible');
         } else {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
     $('.charbtn').on('click',function(){
         console.log('user');
-        if ($('.charname').hasClass('hidden')) {
+        if ($('h1.icon.hidden').length == 2) {
             $('.charname').removeClass('hidden');
             $('.charname').addClass('visible');
         } else {
@@ -21,6 +21,6 @@ $(document).ready(function() {
         }
     });
     $('.votebtn').on('click',function(){
-        console.log('vote');
+        console.log($('vote'));
     });
 });
