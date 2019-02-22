@@ -38,21 +38,24 @@ section.homepage {
           display: flex;
           justify-content: center;
           align-items: center; }
-          section.homepage .flex .col-100 .card .roles h1 {
+          section.homepage .flex .col-100 .card .roles .icon {
             padding: 20px;
             line-spacing: 2px;
             font-size: 30px;
             font-family: 'Raleway', sans-serif;
             transition: all 300ms ease-in-out;
-            background: red;
+            background: #ff5c39;
+            color: white;
             position: absolute;
             text-align: center; }
+            section.homepage .flex .col-100 .card .roles .icon .voting {
+              width: 400px; }
           section.homepage .flex .col-100 .card .roles .hidden {
             display: block;
             opacity: 0;
             transform: translateY(100px); }
           section.homepage .flex .col-100 .card .roles .visible {
-            display: block;
+            display: inline-block;
             opacity: 1;
             transform: translateY(-100px); }
 

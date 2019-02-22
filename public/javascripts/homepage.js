@@ -1,18 +1,18 @@
 $(document).ready(function() {
     $('.partybtn').on('click',function(){
         console.log('search');
-        if ($('h1.hidden').length == 2) {
+        if ($('.icon.hidden').length == 3) {
             $('.partyname').removeClass('hidden');
             $('.partyname').addClass('visible');
-        } else {
+        }
+        else {
             $('.partyname').removeClass('visible');
             $('.partyname').addClass('hidden');
         }
-
     });
     $('.charbtn').on('click',function(){
         console.log('user');
-        if ($('h1.hidden').length == 2) {
+        if ($('.icon.hidden').length == 3) {
             $('.charname').removeClass('hidden');
             $('.charname').addClass('visible');
         } else {
@@ -21,6 +21,12 @@ $(document).ready(function() {
         }
     });
     $('.votebtn').on('click',function(){
-        console.log($('vote'));
+        if ($('.icon.hidden').length == 3) {
+            $('.voting').removeClass('hidden');
+            $('.voting').addClass('visible');
+        } else {
+            $('.voting').removeClass('visible');
+            $('.voting').addClass('hidden');
+        }
     });
 });
