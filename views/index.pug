@@ -1,5 +1,9 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/startpage.css')
+    link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Raleway", type='text/css')
+  body
+    a.button.btnFade.btnOrange Create Game
+    a.button.btnFade.btnOrange Join Game
