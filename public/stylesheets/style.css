@@ -64,7 +64,7 @@ a {
       max-width: 0px;
       float: right;
       list-style: none;
-      background: #24383ef5;
+      background: #434243;
       overflow: hidden;
       color: #ffffff;
       padding: 0;
@@ -87,11 +87,11 @@ a {
     background-color: none; }
   .menuwrapper nav.black ul {
     z-index: 6;
-    background: #6d97a3f5; }
+    background: #d97a3f5; }
   .menuwrapper .menu-icon {
     z-index: 6;
     width: 100%;
-    background: #ff5c39;
+    background: #f2644b;
     text-align: right;
     box-sizing: border-box;
     padding: 15px 24px;
@@ -111,6 +111,11 @@ a {
   .col-70 {
     width: auto; }
   .col-100 {
-    width: auto; } }
+    width: auto; }
+  .menuwrapper .logo {
+    font-size: 20px;
+    margin-left: 15px; }
+  .menuwrapper .menu-icon {
+    font-size: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
