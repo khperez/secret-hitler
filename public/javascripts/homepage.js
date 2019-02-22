@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.partybtn').on('click',function(){
         console.log('search');
-        if ($('h1.icon.hidden').length == 2) {
+        if ($('h1.hidden').length == 2) {
             $('.partyname').removeClass('hidden');
             $('.partyname').addClass('visible');
         } else {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
     $('.charbtn').on('click',function(){
         console.log('user');
-        if ($('h1.icon.hidden').length == 2) {
+        if ($('h1.hidden').length == 2) {
             $('.charname').removeClass('hidden');
             $('.charname').addClass('visible');
         } else {

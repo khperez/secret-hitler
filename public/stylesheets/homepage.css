@@ -39,6 +39,8 @@ section.homepage {
           justify-content: center;
           align-items: center; }
           section.homepage .flex .col-100 .card .roles h1 {
+            padding: 20px;
+            line-spacing: 2px;
             font-size: 30px;
             font-family: 'Raleway', sans-serif;
             transition: all 300ms ease-in-out;
