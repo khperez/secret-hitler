@@ -1,3 +1,3 @@
 # Secret Hitler: (unofficial) Webapp
 
-View the game at [http://secret-hitler-webapp.herokuapp.com](secret-hitler-webapp.herokuapp.com)
+View the game at [secret-hitler-webapp.herokuapp.com](http://secret-hitler-webapp.herokuapp.com)
