@@ -1,9 +1,11 @@
 body
-  padding: 0
+  display: flex
+  flex-direction: column
+  background: #fad691
+  font-family: "Open Sans"
+  min-height: 100vh
+  overflow: hidden
   margin: 0
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-  letter-spacing: 0.08em
-  background: #2E2E3A
 
 .noselect
   -webkit-touch-callout: none
@@ -50,21 +52,24 @@ a
 .order-first
   order: -1
 
-
 .menuwrapper
   z-index: 6
   .logo
+    background: #F2644B
+    font-family: "Germania One"
+    color: #FDE1C0
+    text-shadow: 5px 3px #434243
+    text-align: center
     display: block
     z-index: 6
     position: fixed
     float: left
     margin: 16px 36px
-    color: #ffffff
     top: 0
     margin-top: 17px
     font-weight: bold
     font-size: 24px
-    font-family: 'Raleway', sans-serif
+    text-decoration: none
   nav
     z-index: 6
     width: 100%
@@ -95,14 +100,14 @@ a
     max-height: 30em
     min-width: 15em
   .menu-icon:active
-    background-color: none
+    background: #F2644B
   nav.black ul
     z-index: 6
     background: #6d97a3f5
   .menu-icon
     z-index: 6
     width: 100%
-    background: #ff5c39
+    background: #F2644B
     text-align: right
     box-sizing: border-box
     padding: 15px 24px
@@ -110,10 +115,28 @@ a
     color: #fff
     display: block
 
+navbar
+  a.title
+    text-decoration: none
+  .title
+    background: #F2644B
+    font-family: "Germania One"
+    color: #FDE1C0
+    font-size: 15vw
+    text-shadow: 5px 3px #434243
+    text-align: center
+
+.start
+  display: flex
+  flex: 1
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
 @media only screen and (max-width: 767px)
   .menuwrapper
     .logo
-      font-size: 20px
+      font-size: 5vh
       margin-left: 15px
     .menu-icon
       font-size: 15px

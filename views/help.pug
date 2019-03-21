@@ -1,0 +1,23 @@
+extends main
+
+block nav
+  script(src='/scripts/menu.js')
+  .menuwrapper
+      nav
+        a.logo(href="/") Secret Hitler
+        .menu-icon
+          i.fa.fa-bars.fa-2x
+        .menu
+          ul
+            li
+              a(href='#') About
+            li
+              a(href='#') Item1
+            li
+              a(href='#') Item2
+            li
+              a(href='#') Contact
+
+block content
+  .start
+    p How do play dis game ¯\_(ツ)_/¯
