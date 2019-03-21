@@ -1,7 +1,8 @@
 extends main
 
 block nav
-  a.title(href="/")= title
+  script(src='/scripts/menu.js')
+  .title.create= title
 
 block content
   .content
