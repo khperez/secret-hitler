@@ -7,7 +7,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #fad691;
-  font-family: "Raleway";
+  font-family: "Open Sans";
   min-height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -15,7 +15,7 @@ body {
 
 header {
   background: #F2644B;
-  font-family: "Patua One";
+  font-family: "Germania One";
   color: #FDE1C0;
   font-size: 15vw;
   text-shadow: 5px 3px #434243;
@@ -35,10 +35,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btnWrapper {
@@ -76,27 +76,31 @@ a.gameBtn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FDE1C0;
   text-align: center;
   margin: 20px;
-  width: 40vw;
-  height: 40vh;
-  font-family: "Permanent Marker";
+  width: 80vw;
+  height: 12vh;
+  font-family: "Open Sans";
   font-size: 5vh;
-  border-radius: 10px;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
 }
 
 a.createBtn {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  border: 4px solid #F2644B;
+  background: #F2644B;
   padding: 2px 2px;
 }
 
 a.joinBtn {
-  border: 4px solid #4b8ef2;
+  background: #4b8ef2;
   padding: 2px 2px;
+}
+
+a.helpBtn {
+  background: #434343;
+  height: 6vh;
+  font-size: 3vh;
 }
 
 footer {
