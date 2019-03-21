@@ -9,6 +9,9 @@ router.get('/', function(req, res, next) {
 router.get('/game', function(req, res, next) {
   res.render('game', { title: 'Game' });
 });
+router.get('/create', function(req, res, next) {
+  res.render('create', { title: 'Create' });
+});
 router.get('/help', function(req, res, next) {
   res.render('help', { title: 'Secret Hitler'});
 });
