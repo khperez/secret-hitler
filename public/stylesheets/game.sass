@@ -1,0 +1,68 @@
+section.homepage
+    height: 100vh
+    .flex
+        height: 100vh 
+        .col-100
+            display: flex
+            justify-content: center 
+            align-items: center
+            .card
+                position: relative
+                padding-left: 20px
+                padding-right: 20px
+                padding-top: 20px
+                overflow: hidden
+                width: 300px
+                height: 500px
+                background: #fff
+                text-align: center 
+                margin: 10px auto
+                .character
+                    position: relative 
+                    top: 0
+                    height: 380px
+                    width: 100%
+                    img 
+                        object-fit: cover
+                        position: center center
+                    -webkit-transition: all 0.5s ease
+                    transition: all 0.5s ease
+                .navbuttons
+                    position: absolute
+                    padding-top: 20px
+                    ion-icon 
+                        font-size: 40px
+                        padding-left: 30px 
+                        padding-right: 30px
+                .messages 
+                    display: flex 
+                    justify-content: center 
+                    align-items: center
+                    
+                    .icon
+                        padding: 20px
+                        
+                        line-spacing: 2px
+                        font: 
+                            size: 30px 
+                            family: 'Raleway', sans-serif
+                        transition: all 300ms ease-in-out
+                        background: #ff5c39
+                        color: white
+                        position: absolute
+                        text-align: center
+                        .voting
+                            width: 400px
+                        
+                    .hidden 
+                        display: block
+                        opacity: 0
+                        transform: translateY(100px)
+                    .visible
+                        display: inline-block
+                        opacity: 1
+                        transform: translateY(-100px)
+
+                
+
+
