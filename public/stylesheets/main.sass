@@ -1,7 +1,12 @@
+// Colors
+$light-blue: #7EC9DD
+$bg-yellow: #FBB969
+$fg-yellow: #FAD691
+
 body
   display: flex
   flex-direction: column
-  background: #fad691
+  background: $fg-yellow
   font-family: "Open Sans"
   min-height: 100vh
   overflow: hidden
@@ -131,6 +136,89 @@ navbar
   justify-content: center
   flex-direction: column
 
+input
+  display: block
+  width: 50vw
+  font-size: 1.2rem
+  background: none
+  border: none
+
+input.type
+  border-bottom: 1px solid #434343
+  &:focus
+    outline: none
+    border-bottom: 1px solid #F2644B
+
+form
+  position: relative
+  background: $light-blue
+
+///////////////////////////////
+// Start section
+///////////////////////////////
+
+.btnWrapper
+  flex-direction: row
+  max-width: 50%
+
+.label
+  padding: 20px 10px
+  font-size: 3vh
+
+.topLabel
+  margin-top: 30px
+  align-self: flex-start
+
+.bottomLabel
+  margin-bottom: 30px
+  align-self: flex-end
+
+a.gameBtn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  margin: 20px
+  width: 30vw
+  height: 12vh
+  font-family: "Open Sans"
+  font-size: 5vh
+  border-radius: 3px
+  color: white
+  text-decoration: none
+
+a.createBtn
+  background: #F2644B
+  padding: 2px 2px
+
+a.joinBtn
+  background: $light-blue
+  padding: 2px 2px
+
+a.helpBtn
+  background: #434343
+  height: 6vh
+  font-size: 3vh
+
+a.submitBtn
+  background: #434343
+  height: 6vh
+  font-size: 3vh
+
+footer
+  flex: none
+  background: darkgray
+  color: white
+  text-align: center
+  padding: 10px
+  font-size: 2.2vh
+  font-family: "Open Sans"
+  padding: 5px
+
+  a
+    color: #FAD691
+
+//  Media queries
 @media only screen and (max-width: 767px)
   .menuwrapper
     .logo
