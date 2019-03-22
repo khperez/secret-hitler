@@ -254,7 +254,7 @@ a.gameBtn {
           align-items: center;
   text-align: center;
   margin: 20px;
-  width: 30vw;
+  width: 70vw;
   height: 12vh;
   font-family: "Open Sans";
   font-size: 5vh;
@@ -281,7 +281,8 @@ a.helpBtn {
 
 a.submitBtn {
   background: #434343;
-  height: 6vh;
+  width: 30vw;
+  height: 5vh;
   font-size: 3vh;
 }
 
