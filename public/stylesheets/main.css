@@ -196,25 +196,24 @@ navbar .title {
 }
 
 input {
-  display: block;
-  width: 50vw;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   background: none;
   border: none;
 }
 
-input.type {
+input.create {
   border-bottom: 1px solid #434343;
+  text-align: center;
 }
 
-input.type:focus {
+input.create:focus {
   outline: none;
   border-bottom: 1px solid #F2644B;
 }
 
-form {
-  position: relative;
-  background: #7EC9DD;
+i#create-random {
+  color: #F2644B;
+  font-size: 1.6em;
 }
 
 .btnWrapper {

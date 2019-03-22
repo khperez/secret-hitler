@@ -5,5 +5,9 @@ block nav
   .title.create= title
 
 block content
+  script(src='/scripts/create.js')
   .content
-    p Gonna play a game
+    form(name="create-game")
+      input.create(id="create-name", placeholder="NAME")
+      i.fas.fa-random(id="create-random")
+    a.gameBtn.submitBtn#submit Submit

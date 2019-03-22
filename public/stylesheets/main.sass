@@ -2,6 +2,7 @@
 $light-blue: #7EC9DD
 $bg-yellow: #FBB969
 $fg-yellow: #FAD691
+$orange: #F2644B
 
 body
   display: flex
@@ -60,7 +61,7 @@ a
 .menuwrapper
   z-index: 6
   .logo
-    background: #F2644B
+    background: $orange
     font-family: "Germania One"
     color: #FDE1C0
     text-shadow: 5px 3px #434243
@@ -137,21 +138,20 @@ navbar
   flex-direction: column
 
 input
-  display: block
-  width: 50vw
-  font-size: 1.2rem
+  font-size: 1.7rem
   background: none
   border: none
 
-input.type
+input.create
   border-bottom: 1px solid #434343
+  text-align: center
   &:focus
     outline: none
     border-bottom: 1px solid #F2644B
 
-form
-  position: relative
-  background: $light-blue
+i#create-random
+  color: $orange
+  font-size: 1.6em
 
 ///////////////////////////////
 // Start section
