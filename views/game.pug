@@ -1,5 +1,8 @@
 extends main
 
+block head
+  link(rel='stylesheet', href='/stylesheets/game.css')
+
 block nav
   script(src='/scripts/menu.js')
   .menuwrapper
@@ -12,27 +15,35 @@ block nav
             li
               a(href='#') About
             li
-              a(href='#') Item1
+              a(href='#') Help
             li
-              a(href='#') Item2
-            li
-              a(href='#') Contact
+              a(href='#') Settings
 
 block content
   .content
     script(src='/scripts/homepage.js')
-    section.homepage
-        .flex
-            .col-100
-                .card
-                    .character.noselect
-                        img(src='https://joeschmoe.io/api/v1/random')
-                    .navbuttons
-                        ion-icon(name='contacts').partybtn
-                        ion-icon(name='contact').charbtn
-                        ion-icon(name='checkbox-outline').votebtn
-                    .messages
-                        .icon.partyname.hidden.noselect PartyName
-                        .icon.charname.hidden.noselect CharName
-                        .icon.voting.hidden Vote
-
+    //- section.container-card
+    //-   .flex
+    //-       .col-100
+    //-           .card
+    //-               .character.noselect
+    //-                   img(src='https://joeschmoe.io/api/v1/random')
+    //-               .navbuttons
+    //-                   ion-icon(name='contacts').partybtn
+    //-                   ion-icon(name='contact').charbtn
+    //-                   ion-icon(name='checkbox-outline').votebtn
+    //-               .messages
+    //-                   .icon.partyname.hidden.noselect PartyName
+    //-                   .icon.charname.hidden.noselect CharName
+    //-                   .icon.voting.hidden Vote
+    .card
+      .character.noselect
+          img(src='https://joeschmoe.io/api/v1/random')
+      .navbuttons
+          ion-icon(name='contacts').partybtn
+          ion-icon(name='contact').charbtn
+          ion-icon(name='checkbox-outline').votebtn
+      .messages
+          .icon.partyname.hidden.noselect PartyName
+          .icon.charname.hidden.noselect CharName
+          .icon.voting.hidden Vote

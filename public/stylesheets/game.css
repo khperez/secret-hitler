@@ -1,102 +1,50 @@
-section.homepage {
-  height: 100vh;
-}
-
-section.homepage .flex {
-  height: 100vh;
-}
-
-section.homepage .flex .col-100 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.card {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.homepage .flex .col-100 .card {
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
   overflow: hidden;
   width: 300px;
-  height: 500px;
-  background: #fff;
-  text-align: center;
-  margin: 10px auto;
-}
+  height: 100%;
+  background: #FAD691;
+  text-align: center; }
+  .card .character {
+    height: 380px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid black; }
+    .card .character img {
+      object-fit: cover;
+      position: center center; }
+  .card .navbuttons {
+    padding-top: 20px; }
+    .card .navbuttons ion-icon {
+      font-size: 40px;
+      padding-left: 30px;
+      padding-right: 30px; }
+  .card .messages {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card .messages .icon {
+      padding: 20px;
+      line-spacing: 2px;
+      font-size: 30px;
+      font-family: 'Open Sans', sans-serif;
+      transition: all 300ms ease-in-out;
+      background: #ff5c39;
+      color: white;
+      position: absolute;
+      text-align: center; }
+      .card .messages .icon .voting {
+        width: 400px; }
+    .card .messages .hidden {
+      display: block;
+      opacity: 0;
+      transform: translateY(100px); }
+    .card .messages .visible {
+      display: inline-block;
+      opacity: 1;
+      transform: translateY(-100px); }
 
-section.homepage .flex .col-100 .card .character {
-  position: relative;
-  top: 0;
-  height: 380px;
-  width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-section.homepage .flex .col-100 .card .character img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: center center;
-}
-
-section.homepage .flex .col-100 .card .navbuttons {
-  position: absolute;
-  padding-top: 20px;
-}
-
-section.homepage .flex .col-100 .card .navbuttons ion-icon {
-  font-size: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-section.homepage .flex .col-100 .card .messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.homepage .flex .col-100 .card .messages .icon {
-  padding: 20px;
-  line-spacing: 2px;
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  background: #ff5c39;
-  color: white;
-  position: absolute;
-  text-align: center;
-}
-
-section.homepage .flex .col-100 .card .messages .icon .voting {
-  width: 400px;
-}
-
-section.homepage .flex .col-100 .card .messages .hidden {
-  display: block;
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-}
-
-section.homepage .flex .col-100 .card .messages .visible {
-  display: inline-block;
-  opacity: 1;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-}
 /*# sourceMappingURL=game.css.map */
