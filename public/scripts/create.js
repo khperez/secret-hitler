@@ -5,7 +5,6 @@ names = ["Winston Churchill",
          "Benito Mussolini"]
 
 $(document).ready(function() {
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
     $("i.fas.fa-random").on("click", function() {
         document.getElementById("create-name").value = getRandomPerson();
     });
