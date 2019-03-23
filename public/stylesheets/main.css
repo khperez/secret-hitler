@@ -196,9 +196,11 @@ navbar .title {
 }
 
 input {
-  font-size: 1.7rem;
+  font-size: 2rem;
   background: none;
   border: none;
+  width: 65vw;
+  height: 2rem;
 }
 
 input.create {
@@ -213,7 +215,7 @@ input.create:focus {
 
 i#create-random {
   color: #F2644B;
-  font-size: 1.6em;
+  font-size: 5vh;
 }
 
 .btnWrapper {
