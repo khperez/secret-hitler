@@ -6,8 +6,16 @@ block nav
 
 block content
   script(src='/scripts/create.js')
-  .content
-    form(id="create", name="create-game")
-      input.create(id="create-name", placeholder="NAME")
-      i.fas.fa-random(id="create-random")
-    a.submitBtn#submit Submit
+  form(id="create", name="createGame", method="POST", action="/create-room")
+    .outerForm#createForm
+      .inputCol
+        input.createName(id="name", name="username", placeholder="NAME", autocomplete="off")
+        input.submitBtn(type="submit", value="Submit")
+      .randomCol
+        i.fas.fa-random(id="createRandom")
+   
+    //-   .submitCol
+    //-     input.create(id="name", name="username", placeholder="NAME", autocomplete="off")
+    //-     input.submitBtn(type="submit")
+    //-   .randomCol
+    //-     i.fas.fa-random(id="createRandom")

@@ -59,12 +59,16 @@ a
 .order-first
   order: -1
 
+//////////////////////
+// Navbar
+//////////////////////
+
 navbar
   .title
     background: #F2644B
     font-family: "Germania One"
     color: #FDE1C0
-    font-size: 15vw
+    font-size: 4.2rem
     text-shadow: 5px 3px #434243
     text-align: center
   .menuwrapper
@@ -82,9 +86,9 @@ navbar
     float: left
     margin: 16px 36px
     top: 0
-    margin-top: 17px
+    margin-top: 20px
     font-weight: bold
-    font-size: 24px
+    font-size: 3rem
     text-decoration: none
   nav
     z-index: 6
@@ -143,36 +147,57 @@ navbar
 //////////////////////
 
 input
-  font-size: 2rem
   background: none
   border: none
-  width: 65vw
-  height: 2rem
 
-input.create
+input.createName
+  font-size: 1.5rem
   border-bottom: 1px solid #434343
   text-align: center
   &:focus
     outline: none
     border-bottom: 1px solid #F2644B
 
-i#create-random
-  color: $orange
-  font-size: 1.5rem
-  margin-left: 25px
+.formContainer
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: space-around
 
-a.submitBtn
+.outerForm#createForm
+  display: flex
+  flex-direction: row
+  width: 100%
+  justify-content: space-evenly
+
+.inputCol
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 10px
+
+.randomCol
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-bottom: 30px
+  padding-left: 20px
+
+i#createRandom
+  color: $orange
+  font-size: 2rem
+
+input.submitBtn
   background: #434343
   color: #FFFFFF
   text-align: center
   border-radius: 3px
-  width: 10rem
   font-size: 1.2rem
-  margin: 10px 10px 10px 10px
-  padding: 2px
+  padding: 10px
+  margin: 10px
 
 ///////////////////////////////
-// Start section
+// Content
 ///////////////////////////////
 
 .btnWrapper
@@ -218,24 +243,27 @@ a.helpBtn
   height: 6vh
   font-size: 3vh
 
+///////////////////////////////
+// Footer
+///////////////////////////////
+
 footer
   flex: none
   background: darkgray
   color: white
   text-align: center
   padding: 10px
-  font-size: 2.2vh
+  font-size: 0.8rem
   font-family: "Open Sans"
   padding: 5px
 
   a
     color: #FAD691
 
-//  Media queries
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 340px)
   .menuwrapper
     .logo
-      font-size: 5vh
+      font-size: 2rem
       margin-left: 15px
     .menu-icon
       font-size: 15px

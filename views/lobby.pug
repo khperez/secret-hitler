@@ -1,5 +1,33 @@
 extends main
 
+block head
+  script(src='scripts/lobby.js')
+  link(rel='stylesheet', href='/stylesheets/lobby.css')
+
 block nav
+  script(src='/scripts/menu.js')
+  .menuwrapper
+      nav
+        a.logo(href="/") Secret Hitler
+        .menu-icon
+          i.fa.fa-bars.fa-2x
+        .menu
+          ul
+            li
+              a(href='#') About
+            li
+              a(href='#') Help
+            li
+              a(href='#') Settings
 
 block content
+  #lobbyTitle Waiting for players...
+  .playerIcons
+    i.fas.fa-user#user
+    i.fas.fa-user#user
+    i.fas.fa-user#user
+    i.fas.fa-user#user
+  .playerList
+    p Welcome
+    #name= username
+  .startBtn START

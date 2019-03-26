@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let vh = window.innerHeight * 0.01;
     window.addEventListener('resize', () => {
         // We execute the same script as before
@@ -6,4 +6,7 @@ $(document).ready(function() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    $(".title").on("click", function () {
+        window.location = "/";
+    });
 });

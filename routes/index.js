@@ -12,8 +12,18 @@ router.get('/game', function(req, res, next) {
 router.get('/create', function(req, res, next) {
   res.render('create', { title: 'Secret Hitler' });
 });
+router.get('/lobby', function(req, res, next) {
+  res.render('lobby', { title: 'Secret Hitler' });
+});
 router.get('/help', function(req, res, next) {
   res.render('help', { title: 'Secret Hitler'});
+});
+
+router.post('/create-room', function(req, res, next) {
+    const username = req.body.username;
+    console.log("Created new room for " + username);
+    res.render('lobby', { username: username })
+    res.end();
 });
 
 module.exports = router;

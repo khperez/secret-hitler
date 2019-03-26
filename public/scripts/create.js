@@ -1,15 +1,18 @@
-names = ["Winston Churchill",
-         "Franklin D. Roosevelt",
-         "Joseph Stalin",
-         "Henry Truman",
-         "Benito Mussolini"]
+names = [
+    "Winston Churchill",
+    "Franklin D. Roosevelt",
+    "Joseph Stalin",
+    "Henry Truman",
+    "Benito Mussolini"
+]
 
-$(document).ready(function() {
-    $("i.fas.fa-random").on("click", function() {
-        document.getElementById("create-name").value = getRandomPerson();
+$(document).ready(function () {
+    $('i#createRandom').on('click', function () {
+        document.getElementById("name").value = getRandomPerson();
     });
 });
 
 function getRandomPerson() {
-    return names[Math.floor(Math.random()*names.length)];
+    // TODO: make sure that the same person isn't generated twice
+    return names[Math.floor(Math.random() * names.length)];
 }

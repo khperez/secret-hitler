@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#lobbyTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5px;
+  padding: 10px; }
+
+.playerIcons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #FBB969;
+  justify-content: center; }
+
+.playerList {
+  background: red; }
+
+#name {
+  background: #F2644B; }
+
+#otherPlayer {
+  background: green; }
+
+#user {
+  background: #F2644B;
+  padding: 10px;
+  margin: 5px;
+  color: white; }
+
+.startBtn {
+  background: green;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=lobby.css.map */
