@@ -12,6 +12,11 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
+// var mongoose = require('mongoose');
+// var dbUrl = "mongodb://<dbuser>:<dbpassword>@ds125616.mlab.com:25616/heroku_jv875042";
+
+// mongoose.connect(dbUrl, {useNewUrlParser: true});
+
 server.listen(80);
 
 // view engine setup
@@ -51,11 +56,25 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 
-io.on("connection", function(socket) {
+players = {};
+
+io.on('connection', function(socket) {
     console.log("A user has connected");
+    console.log("your socket id is: " + socket.id);
+    var roomName = generateRoomName();
+    console.log("Your room name is: " + roomName);
+    socket.emit('roomName', roomName);
     socket.on("disconnect", function() {
         console.log("A user has disconnected");
     });
 });
 
 module.exports = app;
+
+function generateRoomName() {
+    const adjectives = [
+        "fiesty", "awesome", "serious", "angry",
+        "eine", "kleine", "nachtmusik"
+    ];
+    return adjectives[Math.floor(Math.random()*adjectives.length)]
+}

@@ -7,13 +7,27 @@ $orange: #F2644B
 .content
   display: flex
   flex-direction: column
-  justify-content: space-between
+  justify-content: center
 
-#lobbyTitle
-  font-size: 1.5rem
+.lobbyHeader
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.lobbyTitle
+  width: 30%
   text-align: center
-  margin: 5px
   padding: 10px
+
+.lobbyEnvelope
+  background: gray
+
+.lobbyPostcard
+  .heading
+    background: $orange
+    text-align: right
+  padding: 20px
 
 .playerIcons
   display: flex
@@ -23,7 +37,13 @@ $orange: #F2644B
   justify-content: center
 
 .playerList
-  background: red
+  background: $orange
+  color: white
+  padding: 20px
+
+#roomName
+  background: black
+  color: white
 
 #name
   background: $orange
@@ -40,5 +60,5 @@ $orange: #F2644B
   background: green
   padding: 10px
   margin-bottom: 20px
-  
+    
   

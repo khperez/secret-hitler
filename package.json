@@ -10,9 +10,13 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "mongoose": "^5.4.20",
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
     "pug": "^2.0.3",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "haikunator": "^2.1.0"
   }
 }

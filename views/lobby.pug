@@ -21,13 +21,24 @@ block nav
               a(href='#') Settings
 
 block content
-  #lobbyTitle Waiting for players...
-  .playerIcons
-    i.fas.fa-user#user
-    i.fas.fa-user#user
-    i.fas.fa-user#user
-    i.fas.fa-user#user
-  .playerList
-    p Welcome
-    #name= username
-  .startBtn START
+  .lobbyHeader
+    i.fas.fa-skull
+    .lobbyTitle Lobby
+    i.fas.fa-skull
+  .lobbyEnvelope
+    span Welcome, #{username} to 
+    span#roomName
+    span  room
+    .lobbyPostcard
+      .heading 1934
+      p Please join us at the room. We need to discuss
+      | matters immediately
+    i.far.fa-copy
+  .playerList Players
+    ul.fa-ul
+      li
+        i.fas.fa-user 
+        |  #{username}
+      li
+        i.fas.fa-user 
+        |  definitely liberal
